@@ -10,12 +10,10 @@ class MainViewModel : ViewModel() {
     var countryService: CountryService = CountryService()
 
     init {
-        fetchCountries(name = "e")
+        fetchCountries("A")
     }
 
     fun fetchCountries(name: String) {
         countries = countryService.fetchCountries(name)
     }
-
-    // TODO: Implement the ViewModel
 }
